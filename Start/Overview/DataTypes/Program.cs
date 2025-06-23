@@ -11,6 +11,12 @@ bool tf = default;
 
 Console.WriteLine($"{a}, {b}, {tf}, {c}, {f}, {d}");
 
+Console.WriteLine($"{c + a}");
+Console.WriteLine($"{(char)(c + a)}");
+
+Console.WriteLine($"{f + a}");
+Console.WriteLine($"{f + c}");
+
 // TODO: implicit type conversion
 
 
