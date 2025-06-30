@@ -4,8 +4,11 @@
 // Make sure the example file exists
 const string filename = "TestFile.txt";
 
-if (!File.Exists(filename)) {
-    using (StreamWriter sw = File.CreateText(filename)) {
+// 1: WriteAllText overwrites a file with the given content
+if (!File.Exists(filename))
+{
+    using (StreamWriter sw = File.CreateText(filename))
+    {
         sw.WriteLine("This is a text file.");
     }
 }
